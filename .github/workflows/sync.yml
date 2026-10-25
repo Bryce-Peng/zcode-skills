@@ -1,0 +1,32 @@
+name: upstream-sync
+# 每周一 03:00 UTC（北京 11:00）按 curation.tsv 重建；有上游变更时开/更新 PR，merge 后本机
+# `zcode plugins marketplace update curated-skills && zcode plugins update imported-skills@curated-skills`。
+on:
+  schedule:
+    - cron: "0 3 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Rebuild curated skills from upstream
+        run: bash scripts/sync-skills.sh
+
+      - name: Open update PR
+        uses: peter-evans/create-pull-request@v7
+        with:
+          branch: sync/upstream
+          delete-branch: true
+          title: "sync: upstream skill updates"
+          commit-message: "sync: rebuild curated skills from upstream (version bump)"
+          body: |
+            上游有变更，已按 curation.tsv 重建。
+            审阅 diff 后 merge；本机执行：
+            `zcode plugins marketplace update curated-skills && zcode plugins update imported-skills@curated-skills`

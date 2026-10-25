@@ -1,0 +1,27 @@
+# curation.tsv — 收藏夹选型唯一事实源
+# 格式（TAB 分隔）：<owner/repo>	<仓内路径>	<落位名>
+# 增删技能＝改此文件＋跑 scripts/sync-skills.sh（本地）或等 CI 周检 PR
+# 同步基线：各上游默认分支 HEAD；剔除规则统一为 rsync --exclude agents（Codex 专用配置）
+# 注意：mattpocock/skills 于 2026-10-25 将 skills/skills/<类>/<名> 抬平为 skills/<类>/<名>
+mattpocock/skills	skills/productivity/grilling	grilling
+mattpocock/skills	skills/productivity/grill-me	grill-me
+mattpocock/skills	skills/engineering/grill-with-docs	grill-with-docs
+mattpocock/skills	skills/engineering/improve-codebase-architecture	improve-codebase-architecture
+mattpocock/skills	skills/engineering/codebase-design	codebase-design
+mattpocock/skills	skills/engineering/domain-modeling	domain-modeling
+mattpocock/skills	skills/engineering/tdd	tdd
+mattpocock/skills	skills/engineering/diagnosing-bugs	diagnosing-bugs
+mattpocock/skills	skills/productivity/writing-for-agents	writing-for-agents
+mattpocock/skills	skills/engineering/triage	triage
+mattpocock/skills	skills/engineering/setup-matt-pocock-skills	setup-matt-pocock-skills
+mattpocock/skills	skills/engineering/to-spec	to-spec
+mattpocock/skills	skills/engineering/wayfinder	wayfinder
+mattpocock/skills	skills/engineering/implement	implement
+mattpocock/skills	skills/engineering/implement-spec	implement-spec
+mattpocock/skills	skills/engineering/code-review	code-review
+mattpocock/skills	skills/engineering/pr	pr
+anthropics/skills	skills/frontend-design	frontend-design
+heygen-com/hyperframes	skills/hyperframes	hyperframes
+heygen-com/hyperframes	skills/hyperframes-cli	hyperframes-cli
+heygen-com/hyperframes	skills/hyperframes-registry	hyperframes-registry
+heygen-com/hyperframes	skills/media-use	media-use
