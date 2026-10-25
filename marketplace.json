@@ -5,11 +5,11 @@
       "name": "imported-skills",
       "source": "./imported-skills",
       "version": "0.1.0",
-      "description": "Curated skills for this ZCode setup, selected from mattpocock/skills, anthropics/skills and heygen-com/hyperframes. Curation manifest: curation.tsv; rebuilt weekly from upstream via CI.",
+      "description": "Curated skills shelf: 22 skills selected verbatim from mattpocock/skills, anthropics/skills and heygen-com/hyperframes, kept fresh by a weekly CI sync that opens PRs against upstream changes. Curation manifest: curation.tsv.",
       "displayName": "Curated Skills",
       "displayName_i18n": { "zh-CN": "技能收藏夹" },
       "description_i18n": {
-        "zh-CN": "为本机 ZCode 臻选的技能收藏夹：自 mattpocock/skills、anthropics/skills 与 heygen-com/hyperframes 逐字精选 22 个技能，curation.tsv 为选型唯一事实源，CI 每周对上游重建并以 PR 提交变更。"
+        "zh-CN": "技能收藏夹：自 mattpocock/skills、anthropics/skills 与 heygen-com/hyperframes 逐字精选 22 个技能（逼问组、架构组、流程纪律、任务链、表达与创作），curation.tsv 为选型唯一事实源，CI 每周对上游重建并以 PR 提交变更。"
       },
       "category": "developer-tools"
     }
