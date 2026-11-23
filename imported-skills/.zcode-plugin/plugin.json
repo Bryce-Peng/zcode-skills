@@ -1,6 +1,6 @@
 {
   "name": "imported-skills",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Ported skills from mattpocock/skills, anthropics/skills and heygen-com/hyperframes: interrogation trio (grilling, grill-me, grill-with-docs), architecture trio (improve-codebase-architecture, codebase-design, domain-modeling), tdd, diagnosing-bugs, writing-for-agents, tracker chain (triage, setup-matt-pocock-skills, to-spec, wayfinder, implement, implement-spec), git-review pair (code-review, pr), frontend-design, and the hyperframes core four (hyperframes, hyperframes-cli, hyperframes-registry, media-use). Verbatim upstream snapshots; codex-specific configs stripped.",
   "author": { "name": "brycepeng" },
   "skills": "./skills"

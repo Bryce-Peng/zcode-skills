@@ -4,7 +4,7 @@
     {
       "name": "imported-skills",
       "source": "./imported-skills",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "description": "Curated skills shelf: 22 skills selected verbatim from mattpocock/skills, anthropics/skills and heygen-com/hyperframes, kept fresh by a weekly CI sync that opens PRs against upstream changes. Curation manifest: curation.tsv.",
       "displayName": "Curated Skills",
       "displayName_i18n": { "zh-CN": "技能收藏夹" },
